@@ -5,13 +5,17 @@
     let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
     Verifique quais itens da  lista são palíndromos e retorne a lista com os palíndromos encontrados. Os demais devem ser desconsiderados.
     */
-
     //ENTRADA
-
-
+        let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+        let palindromos = [];
     //PROCESSAMENTO
-
-
+    for(let pal of lista){
+        let soletrado = Array.from(pal);
+        soletrado = soletrado.reverse();
+        if(soletrado.join('') == pal){
+            palindromos.push(pal);
+        }
+    }
     //SAÍDA
-
+    document.write(`As seguintes palavras são palíndromos: ${palindromos}`);
 </script>

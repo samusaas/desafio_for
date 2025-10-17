@@ -4,18 +4,18 @@
     Considere que uma família foi viajar e, entre cada parada, percorreu a seguinte quilometragem:
     let distancias = [100, 130, 180, 150];
     Calcule a quilometragem total da viagem e também quantos quilômetros foram viajados por hora, considerando que a viagem demorou 10 horas.
-
     */
 
     //Entrada
-
-
+    let distancias = [100, 130, 180, 150];
+    let total = 0;
     //Processamento
-
-
+    for(let cada of distancias){
+        total = total + cada;
+    }
+    let tempo = total / 10;
     //Saída
-
-
+    document.write(`A viagem foi de ${total}km, viajados a ${tempo} km por hora `);
     /*
     A viagem teve extensão total de 560 Km e a distância percorrida por hora foi de 56 Km.
     */
